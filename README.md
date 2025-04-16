@@ -44,11 +44,11 @@ notifier.send_ms_teams_notice message
 
 ## API Docs
 
-The gem specs can [be found at RubyDocs.](https://www.rubydoc.info/gems/expiry_calculator)
+The gem specs can [be found at RubyDocs.](https://www.rubydoc.info/gems/ms_teams_notifier)
 
 ## Contributing
 
-Bug reports and pull requests are welcome [on GitHub](https://github.com/abarrak/expiry_calculator).
+Bug reports and pull requests are welcome [on GitHub](https://github.com/abarrak/ms_teams_notifier).
 
 ## License
 
