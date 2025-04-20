@@ -1,22 +1,22 @@
 # frozen_string_literal: true
 
-require_relative "lib/ms_teams_notifier/version"
+require_relative "lib/ms_teams_notification/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "ms_teams_notifier"
-  spec.version = MsTeamsNotifier::VERSION
+  spec.name = "ms_teams_notification"
+  spec.version = MsTeamsNotification::VERSION
   spec.authors = ["Abdullah Barrak"]
   spec.email = ["abdullah@abarrak.com"]
 
   spec.summary = "A simple ms teams noftifier gem."
   spec.description = "A ruby library that offers simple notification capablities for Microsoft Teams."
-  spec.homepage = "https://rubygems.org/gems/ms_teams_notifier"
+  spec.homepage = "https://rubygems.org/gems/ms_teams_notification"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.1.0"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/abarrak/ms_teams_notifier/blob/main/lib/ms_teams_notifier"
-  spec.metadata["changelog_uri"] = "https://github.com/abarrak/ms_teams_notifier/releases"
+  spec.metadata["source_code_uri"] = "https://github.com/abarrak/ms_teams_notification/blob/main/lib/ms_teams_notification"
+  spec.metadata["changelog_uri"] = "https://github.com/abarrak/ms_teams_notification/releases"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.

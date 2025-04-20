@@ -2,5 +2,5 @@
 
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in ms_teams_notifier.gemspec
+# Specify your gem's dependencies in ms_teams_notification.gemspec
 gemspec

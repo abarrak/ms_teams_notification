@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ms_teams_notifier (1.0.0)
+    ms_teams_notification (1.0.0)
       activesupport (~> 7.1)
 
 GEM
@@ -107,7 +107,7 @@ PLATFORMS
 DEPENDENCIES
   codeclimate-test-reporter (~> 1.0)
   minitest (~> 5.16)
-  ms_teams_notifier!
+  ms_teams_notification!
   rake (~> 13.0)
   simplecov (= 0.22.0)
   simplecov-cobertura (~> 2.1.0)

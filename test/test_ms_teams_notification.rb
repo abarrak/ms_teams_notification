@@ -2,11 +2,11 @@
 
 require "test_helper"
 
-class TestMsTeamsNotifier < Minitest::Test
+class TestMsTeamsNotification < Minitest::Test
   include Support::StdHelper
 
   def test_that_it_has_a_version_number
-    refute_nil ::MsTeamsNotifier::VERSION
+    refute_nil ::MsTeamsNotification::VERSION
   end
 
   def test_that_it_sets_configurations_per_the_passed_options
@@ -36,7 +36,7 @@ class TestMsTeamsNotifier < Minitest::Test
       ms_teams_webhook: "https://httpbin.org/post",
       notification_subject: "Notification: System Update Scheduled",
     }
-    @notifier = MsTeamsNotifier::Base.new(**@data)
+    @notifier = MsTeamsNotification::Base.new(**@data)
   end
 
   def unset_sample_data

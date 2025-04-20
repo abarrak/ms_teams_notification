@@ -1,7 +1,7 @@
 require 'erb'
 require 'active_support/core_ext/object/blank'
 
-module MsTeamsNotifier
+module MsTeamsNotification
   class Formatter
 
     def initialize fields

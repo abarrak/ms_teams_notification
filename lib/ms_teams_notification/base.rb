@@ -2,13 +2,13 @@ require 'uri'
 require 'active_support/core_ext/object/blank'
 require_relative 'logger'
 
-module MsTeamsNotifier
+module MsTeamsNotification
   class Base
 
     attr_reader :default_subject
 
     def initialize **kwargs
-      @log = MsTeamsNotifier::Logger.instance
+      @log = MsTeamsNotification::Logger.instance
 
       setup_configuration **kwargs
       configure_ms_teams

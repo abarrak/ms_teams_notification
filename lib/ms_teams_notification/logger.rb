@@ -1,7 +1,7 @@
 require 'logger'
 require 'singleton'
 
-module MsTeamsNotifier
+module MsTeamsNotification
   class Logger
     include Singleton
 
