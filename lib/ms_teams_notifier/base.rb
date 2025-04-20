@@ -1,8 +1,9 @@
+require 'uri'
 require 'active_support/core_ext/object/blank'
 require_relative 'logger'
 
 module MsTeamsNotifier
-  module Notification
+  class Base
 
     attr_reader :default_subject
 

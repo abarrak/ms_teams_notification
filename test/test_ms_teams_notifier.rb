@@ -9,12 +9,13 @@ class TestMsTeamsNotifier < Minitest::Test
     refute_nil ::MsTeamsNotifier::VERSION
   end
 
-  def sets_configurations_per_the_passed_options
+  def test_that_it_sets_configurations_per_the_passed_options
     assert_equal @notifier.instance_variable_get("@ms_teams_webhook"), @data[:ms_teams_webhook]
     assert_equal @notifier.instance_variable_get("@notification_subject"), @data[:notification_subject]
   end
 
-  def sends_ms_teams_notifications_given_a_text_content
+  def test_that_it_sends_ms_teams_notifications_given_a_text_content
+    skip("till mocking or catch net errors.")
     assert_match @notifier.send_ms_teams_notice(sample_message), %r{\"title\": \"#{@data[:notification_subject]}}
   end
 
@@ -35,7 +36,7 @@ class TestMsTeamsNotifier < Minitest::Test
       ms_teams_webhook: "https://httpbin.org/post",
       notification_subject: "Notification: System Update Scheduled",
     }
-    @notifier = MsTeamsNotifier.new(**@data)
+    @notifier = MsTeamsNotifier::Base.new(**@data)
   end
 
   def unset_sample_data

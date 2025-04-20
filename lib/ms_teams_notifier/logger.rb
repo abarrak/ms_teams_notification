@@ -6,8 +6,8 @@ module MsTeamsNotifier
     include Singleton
 
     def initialize
-      @logger = Logger.new STDOUT
-      @logger.level = Logger::DEBUG
+      @logger = ::Logger.new STDOUT
+      @logger.level = ::Logger::DEBUG
     end
 
     def msg *message, level: :info
