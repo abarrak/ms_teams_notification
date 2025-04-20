@@ -1,4 +1,3 @@
-require 'network-client'
 require 'active_support/core_ext/object/blank'
 
 module MsTeamsNotifier
