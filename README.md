@@ -23,11 +23,12 @@ gem install ms_teams_notifier
 You can build your notifer per configuration:
 
 ```ruby
-opts = { ms_teams_webhook:, notification_subject: "" }
+opts = { ms_teams_webhook: "", notification_subject: "" }
 notifier = MsTeamsNotifier.new **options
 ```
 
-Optionally you can formlate a rich message with formatter:
+Optionally you can formlate a rich message with formatter.
+THe formatter accepts a hash of additional fields that will be appended as list after the message.
 
 ```ruby
 text = "Notification for service maintenance"
@@ -41,6 +42,10 @@ Then, fire it:
 ```ruby
 notifier.send_ms_teams_notice message
 ```
+
+Ouput:
+
+<img src="" width="80%">
 
 ## API Docs
 

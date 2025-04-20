@@ -12,8 +12,6 @@ module MsTeamsNotifier
       ERB.new(
         <<~HTML
           <%= message %>
-
-
           <u>More Details:</u>
           <br>
           <ul style="color: #400707">

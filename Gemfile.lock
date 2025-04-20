@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ms_teams_notifier (0.1.0)
+    ms_teams_notifier (1.0.0)
       activesupport (~> 7.1)
 
 GEM
@@ -94,7 +94,15 @@ GEM
     unicode-emoji (4.0.4)
 
 PLATFORMS
-  arm64-darwin-24
+  aarch64-linux
+  aarch64-linux-gnu
+  aarch64-linux-musl
+  arm64-darwin
+  universal-darwin
+  x86_64-darwin
+  x86_64-linux
+  x86_64-linux-gnu
+  x86_64-linux-musl
 
 DEPENDENCIES
   codeclimate-test-reporter (~> 1.0)
