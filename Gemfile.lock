@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ms_teams_notification (1.0.0)
+    ms_teams_notification (1.0.1)
       activesupport (~> 7.1)
 
 GEM

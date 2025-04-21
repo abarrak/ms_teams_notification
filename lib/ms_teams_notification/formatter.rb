@@ -1,9 +1,8 @@
-require 'erb'
-require 'active_support/core_ext/object/blank'
+require "erb"
+require "active_support/core_ext/object/blank"
 
 module MsTeamsNotification
   class Formatter
-
     def initialize fields
       @fields = fields
     end
@@ -22,6 +21,5 @@ module MsTeamsNotification
         HTML
       ).result(binding)
     end
-
   end
 end

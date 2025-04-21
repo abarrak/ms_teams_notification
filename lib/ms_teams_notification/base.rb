@@ -1,11 +1,10 @@
-require 'uri'
-require 'net/http'
-require 'active_support/core_ext/object/blank'
-require_relative 'logger'
+require "uri"
+require "net/http"
+require "active_support/core_ext/object/blank"
+require_relative "logger"
 
 module MsTeamsNotification
   class Base
-
     attr_reader :default_subject
 
     def initialize **kwargs
@@ -21,8 +20,8 @@ module MsTeamsNotification
       @log.msg "#{self_name}: sending ms teams notification."
 
       request = Net::HTTP::Post.new @webhook_url.request_uri
-      request['Content-Type'] = 'application/json'
-      request.body = { title: message_subject, text: text }.to_json
+      request["Content-Type"] = "application/json"
+      request.body = {title: message_subject, text: text}.to_json
 
       http = Net::HTTP.new @webhook_url.host, @webhook_url.port
       http.use_ssl = true
@@ -31,7 +30,7 @@ module MsTeamsNotification
       body = http.request(request)&.body
       @log.msg "#{self_name}: ms teams notification is sent."
       body
-    rescue StandardError => e
+    rescue => e
       @log.msg "#{self_name}: ms teams notification failed.", level: :error
       @log.msg "#{self_name}: #{e.message}.", level: :error
     end
@@ -44,8 +43,8 @@ module MsTeamsNotification
 
     def setup_configuration **opts
       %i[notification_subject ms_teams_webhook].each do |sym|
-          @log.msg "#{self_name}: argument #{sym} is empty.", level: :warn if opts[sym].blank?
-          instance_variable_set "@#{sym.to_s}", opts[sym]
+        @log.msg "#{self_name}: argument #{sym} is empty.", level: :warn if opts[sym].blank?
+        instance_variable_set "@#{sym}", opts[sym]
       end
 
       @default_subject = "Automated Notification."
