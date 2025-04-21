@@ -1,4 +1,5 @@
 require 'uri'
+require 'net/http'
 require 'active_support/core_ext/object/blank'
 require_relative 'logger'
 
@@ -10,7 +11,7 @@ module MsTeamsNotification
     def initialize **kwargs
       @log = MsTeamsNotification::Logger.instance
 
-      setup_configuration **kwargs
+      setup_configuration(**kwargs)
       configure_ms_teams
     end
 

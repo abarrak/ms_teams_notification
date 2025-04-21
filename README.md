@@ -2,8 +2,6 @@
 
 A ruby library from simple notification capablities for Microsoft Teams.
 
-> Extracted from [volume sweeper](https://github.com/abarrak/volume_sweeper/blob/main/lib/volume_sweeper) tool.
-
 ## Installation
 
 Install the gem and add to the application's Gemfile by executing:
