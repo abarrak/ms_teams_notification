@@ -1,6 +1,6 @@
 # MS Teams Notifications
 [![Gem Version](https://badge.fury.io/rb/ms_teams_notification.svg)](https://rubygems.org/gems/ms_teams_notification)
-[![Build](https://github.com/abarrak/ms_teams_notification/actions/workflows/ci.yml/badge.svg)](https://github.com/abarrak/ms_teams_notification/actions/workflows/ci.yml)
+[![Build](https://github.com/abarrak/ms_teams_notification/actions/workflows/main.yml/badge.svg)](https://github.com/abarrak/ms_teams_notification/actions/workflows/main.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
